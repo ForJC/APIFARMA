@@ -1,0 +1,5 @@
+SELECT b.book_id,a.name,b.title,b.year,b.price,b.copies 
+      FROM books as b 
+      JOIN authors as a 
+      ON  a.author_id=b.author_id  
+      ORDER BY b.book_id DESC LIMIT 10;
